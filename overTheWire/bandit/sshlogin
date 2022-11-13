@@ -1,0 +1,8 @@
+#!/bin/bash
+level=$1
+if [ "$level" == "" ]
+    then
+        echo "Usage: ./sshpass <level>"
+    else
+        sshpass -p $(cat `echo bandit$level` 2>/dev/null) ssh bandit$level@bandit.labs.overthewire.org -p 2220 2>/dev/null || echo -e "Error: File not found:)"
+fi
