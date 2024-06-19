@@ -1,0 +1,2 @@
+picoCTF{.*?}
+picoCTF{f1nd_15_f457_ab443fd1}
