@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+
+cur_file=$(pwd | rev | cut -d "/" -f1 | rev)
+
+comp_file=$cur_file'_COMPLETE'
+
+cd ../
+
+mv $cur_file $comp_file

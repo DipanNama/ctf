@@ -1,0 +1,3 @@
+[console_scripts]
+rockstar-py = rockstarpy.command_line:command_line
+

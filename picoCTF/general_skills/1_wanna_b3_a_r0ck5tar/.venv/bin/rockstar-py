@@ -1,0 +1,8 @@
+#!/home/dipannama/ctf/picoCTF/general_skills/1_wanna_b3_a_r0ck5tar/.venv/bin/python3
+# -*- coding: utf-8 -*-
+import re
+import sys
+from rockstarpy.command_line import command_line
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(command_line())
